@@ -1,0 +1,23 @@
+{
+  "name": "selenium-demo",
+  "version": "1.0.0",
+  "description": "Selenium GUI tests for the applitools/demo site",
+  "scripts": {
+    "test": "mocha 'tests/**/*.test.js' --timeout 60000 --reporter spec",
+    "test:login": "mocha tests/login.test.js --timeout 60000",
+    "test:smoke": "mocha tests/visual.test.js --timeout 60000",
+    "test:chrome": "BROWSER=chrome mocha tests/login.test.js tests/visual.test.js --timeout 60000",
+    "test:edge": "BROWSER=edge mocha tests/login.test.js tests/visual.test.js --timeout 60000",
+    "test:cross-browser": "mocha tests/cross-browser.test.js --timeout 120000"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.18.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "mocha": "^10.4.0",
+    "chai": "^5.1.1"
+  }
+}
+
+
