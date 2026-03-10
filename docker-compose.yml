@@ -1,0 +1,12 @@
+services:
+  selenium-tests:
+    build: .
+    image: auto-test
+    volumes:
+      - ./config/.env:/app/.env
+    environment:
+      - HEADLESS=true
+      - BROWSER=${BROWSER:-chrome}
+    cap_add:
+      - SYS_ADMIN
+    shm_size: "2gb"
