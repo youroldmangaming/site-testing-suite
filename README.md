@@ -26,6 +26,14 @@
 
 This project provides a fully containerised Selenium test environment targeting the Applitools demo applications. Tests run headlessly inside Docker using both **Google Chrome** and **Microsoft Edge**, with no external testing accounts or API keys required.
 
+<img width="849" height="1079" alt="image" src="https://github.com/user-attachments/assets/9ed2d437-9a86-452f-95db-a299dd532722" />
+
+
+
+
+
+
+
 The suite covers:
 
 - **Login page** — form rendering, input acceptance, field clearing, and successful navigation
